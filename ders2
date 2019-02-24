@@ -1,0 +1,10 @@
+#!/bin/bash
+echo "Ilk degiskeni halletmeyi öğreniyoruz:"
+degisken="Ilk Degisken"
+echo $degisken
+
+
+echo ""
+echo "Değişken tanımlandı"
+
+

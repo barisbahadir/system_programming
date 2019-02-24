@@ -1,0 +1,42 @@
+#!/bin/bash
+
+echo "Baris Bahadir Genel Tekrar"
+
+echo "Bir klasör ismi giriniz: "
+
+read klasor_ismi1
+
+echo "Bir klasör ismi daha giriniz: "
+
+read klasor_ismi2
+
+mkdir $klasor_ismi1
+mkdir $klasor_ismi2
+
+echo "Bir dosya ismi giriniz: "
+read dosya_ismi1
+
+echo "Bir dosya ismi daha giriniz: "
+read dosya_ismi2
+
+touch $klasor_ismi1/$dosya_ismi1
+echo "Dosya yolu oluşturuldu: $klasor_ismi1/$dosya_ismi1 "
+
+touch $klasor_ismi2/$dosya_ismi2
+echo "Dosya 2 şu yolda oluşturuldu: $klasor_ismi/$dosya_ismi2 "
+
+echo "Bir toplama işlemi yapalım :"
+read sayi1
+
+echo "Sayi 2'yi giriniz: "
+read sayi2
+
+typeset -i sayi_toplami
+
+sayi_toplami=$sayi1+$sayi2
+
+echo $sayi_toplami > $klasor_ismi1/$dosya_ismi1
+
+echo "Tüm işlemler tamamlandı.."
+
+

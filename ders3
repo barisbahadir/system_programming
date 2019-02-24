@@ -1,0 +1,6 @@
+#!/bin/bash
+
+echo "Dogum tarihinizi giriniz:"
+read dogumtarihi
+yas=2019-dogumtarihi
+echo "Kullanıcının yaşı: $yas"

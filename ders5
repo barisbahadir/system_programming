@@ -1,0 +1,18 @@
+#!/bin/bash
+
+kullanici_adi="Baris Bahadir Savur"
+
+echo "Bir yas bilgisi giriniz:"
+
+read kullanici_yasi
+
+echo "Bir öğrenci numarası giriniz:"
+
+read ogr_no
+
+echo "Girdiginiz kullanici adi: $kullanici_adi"
+
+echo "Girdiginiz okul no $ogr_no"
+
+echo "Girdiginiz yas: $kullanici_yasi"
+

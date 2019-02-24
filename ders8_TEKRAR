@@ -1,0 +1,43 @@
+#!/bin/bash
+
+echo "Genel tekrara başlıyoruz!"
+
+echo "Bir klasör1 için isim giriniz:"
+read klasor1
+
+echo "Klasör2 için bir isim giriniz:"
+read klasor2
+
+mkdir $klasor1
+mkdir $klasor2
+
+echo "$klasor1 ve $klasor2 isminde klasörler oluşturuldu."
+
+echo "Sıra geldi oluşturulacak dosyalara...."
+
+echo "Oluşturulacak dosya ismi giriniz"
+read dosya1
+
+touch $klasor1/$dosya1
+
+echo "Oluşturulacak dosya 2 için isim giriniz:"
+read dosya2
+
+touch $klasor2/$dosya2
+
+echo "Dosyalar oluşturuldu."
+
+echo "Sayi 1 giriniz:"
+read sayi1
+
+echo "Sayi 2 giriniz:"
+read sayi2
+
+typeset -i sonuc
+sonuc=$sayi1+$sayi2
+
+echo $sonuc > $klasor1/$dosya1
+
+path=$(pwd)
+
+echo "Sonucumuz : $path isimli klasordedir."

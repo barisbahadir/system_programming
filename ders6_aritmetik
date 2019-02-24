@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo "Bir dogum tarihi giriniz:"
+read dogum_tarihi
+
+typeset -i yas_hesapla
+yas_hesapla=2019-dogum_tarihi
+echo "Yaşınız: $yas_hesapla" 

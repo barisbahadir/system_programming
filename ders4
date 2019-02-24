@@ -1,0 +1,5 @@
+echo "Diger 3 derste ogrendiklerimizi pekiştirelim:"
+
+echo "Degisken giriniz:"
+read degisken
+echo "Girdiginiz degisken: $degisken"

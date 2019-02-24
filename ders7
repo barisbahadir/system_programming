@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "Ders 7"
+
+path=$(pwd)
+
+echo $path
